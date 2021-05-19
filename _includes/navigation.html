@@ -1,9 +1,10 @@
 <nav>
+    <h1><a href="{{ site.baseurl }}/">André Mota</a></h1>
     <ul>
-        <li><a href="about">About me</a></li> <!--- como deixar o link para a about_me.hmtl -->
-        <li><a>Projects</a></li>
-        <li><a>Contacts</a></li>
+        {% for navigation in site.data.nav-geral.docs %}
+        <li>
+            <a href="{{ site.baseurl }}/{{ navigation.url }}">{{ navigation.title }}</a>
+        </li> 
+        {% endfor %}
     </ul>
-</nav>  
-
-
+</nav>
