@@ -2,7 +2,11 @@
 layout: home
 ---
 
-<h1>Welcome to my portfolio</h1>
-<h2>Hope you like it</h2>
+<div class="fundo">
 
-<!-- incluir fundo giro -->
+<h1>Welcome to my portfolio</h1>
+<h2>Hope you like it!</h2>
+
+<!-- fundo gradiente animado -->
+
+</div>
