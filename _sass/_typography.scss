@@ -1,0 +1,51 @@
+@import "colors";
+
+@mixin font-principal {
+    font-family: "Roboto Mono", Arial, Helvetica, sans-serif;
+    color: $color-principal;
+}
+
+@mixin font-bright-body {
+    @include font-principal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+}
+
+@mixin font-bright-title {
+    @include font-principal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 65px;
+}
+
+@mixin font-bright-subtitle {
+    @include font-principal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+}
+
+@mixin font-dark-body {
+    @include font-principal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: $color-principal-dark;
+}
+
+@mixin font-dark-title {
+    @include font-principal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
+    color: $color-principal-dark;
+}
+
+@mixin font-dark-subtitle {
+    @include font-principal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    color: $color-principal-dark;
+}

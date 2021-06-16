@@ -1,13 +1,12 @@
 ---
 layout: home
 ---
-<body>
-    <div class="fundo">
 
-        <h1>Welcome to my portfolio!</h1>
-        <h2>Hope you like it.</h2>
+<div class="intro">
 
-        <!-- fundo gradiente animado -->
+    <h1>Welcome to my portfolio!</h1>
+    <h2>Hope you like it.</h2>
 
-    </div>
-</body>
+</div>
+
+<div class="background-gradient"></div>
