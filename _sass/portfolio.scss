@@ -42,7 +42,7 @@ main {
         right: 0;
         /*ver isto depois */
         width: 100vw;
-        height: 100vh;
+        height: 100%;
         animation: gradient 16s ease infinite;
         position: absolute;
         z-index: -1;
@@ -78,6 +78,7 @@ header {
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
+        padding-top: 50px;
         li {
             @include font-bright-body;
             padding: 52px 15px 15px 15px;
@@ -158,6 +159,41 @@ footer {
     }
  }
 
+ /* MY PROJECTS */
+ .normal-page-content {
+    padding: 50px 40px 60px 40px;
+    li {
+        list-style-type: none;
+        padding-top: 15px;
+    }
+    a {
+        color: $color-principal;
+        text-decoration: none;
+        &:hover {
+            text-decoration: overline;
+            color: $color-principal-hover;
+        }
+    }
+ }
+
+ /* CONTACTS 
+ fazer igual contacts e projects porque o codigo é o mesmo*/
+
+.contacts-content {
+    padding: 50px 40px 60px 40px;
+    li {
+        list-style-type: none;
+        padding-top: 15px;
+    }
+    a {
+        color: $color-principal;
+        text-decoration: none;
+        &:hover {
+            text-decoration: overline;
+            color: $color-principal-hover;
+        }
+    }
+}
 
  /* PLANTOME */
 
@@ -186,4 +222,10 @@ footer {
         height: 100%;
         position: absolute;
         z-index: -1;
+}
+
+@media only screen and (min-width: 535px){
+    header ul {
+        padding-top: 0;
+    }
 }
